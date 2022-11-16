@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Helmet from '../components/Helmet'
-import HeroSlider from '../components/HeroSlider'
+import Slider from '../components/Slider'
 import Section, { SectionTitle, SectionBody } from '../components/Section'
 // import PolicyCard from '../components/PolicyCard'
 import Grid from '../components/Grid'

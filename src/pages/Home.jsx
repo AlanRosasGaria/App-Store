@@ -1,23 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Helmet from '../components/Helmet'
-import HeroSlider from '../components/HeroSlider'
+// import Slider from '../components/Slider'
+import Slider from '../components/Slider'
 import Section, { SectionTitle, SectionBody } from '../components/Section'
 import Grid from '../components/Grid'
 import ProductCard from '../components/ProductCard'
-import heroSliderData from '../assets/fake-data/hero-slider'
+// import heroSliderData from '../assets/fake-data/hero-slider'
 import productData from '../assets/fake-data/products'
 import banner from '../assets/images/banner.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
     return (
         <Helmet title="Inicio">
-            <HeroSlider
-                data={heroSliderData}
-                control={true}
-                auto={false}
-                timeOut={5000}
-            />
+            <Slider/>
             <Section>
                 <SectionTitle>
                     Productos más vendidos de la semana
