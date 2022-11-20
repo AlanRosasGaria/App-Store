@@ -1,5 +1,5 @@
 .header {
-    background-color: $main-bg;
+    background-color: $main-color-yellow;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,7 +32,7 @@
     }
 
     &__logo {
-        @include flex(center, center);
+        @include flex(flex-start,flex-start);
         position: absolute;
         inset: 0;
         pointer-events: none;
@@ -49,6 +49,7 @@
 
         &__item ~ &__item {
             margin-left: 39px;
+            text-decoration: none;
 
             @include tablet {
                 margin-left: 20px;

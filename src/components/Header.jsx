@@ -3,10 +3,10 @@ import { Link, useLocation } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/images/Logo-2.png'
-
+import { AiFillHome } from 'react-icons/fa';
 const mainNav = [
     {
-        display: "Inicio",
+        display: "STORE CODE",
         path: "/"
     },
     {
@@ -16,11 +16,7 @@ const mainNav = [
     {
         display: "Accesorio",
         path: "/accessories"
-    },
-    // {
-    //     display: "Contacto",
-    //     path: "/contact"
-    // }
+    }
 ]
 
 const Header = () => {
@@ -50,11 +46,6 @@ const Header = () => {
     return (
         <div className="header" ref={headerRef}>
             <div className="container">
-                <div className="header__logo">
-                    <Link to="/">
-                        <img src={logo} alt="" />
-                    </Link>
-                </div>
                 <div className="header__menu">
                     <div className="header__menu__mobile-toggle" onClick={menuToggle}>
                         <i className='bx bx-menu-alt-left'></i>
@@ -78,9 +69,6 @@ const Header = () => {
                         }
                     </div>
                     <div className="header__menu__right">
-                        <div className="header__menu__item header__menu__right__item">
-                            <i className="bx bx-search"></i>
-                        </div>
                         <div className="header__menu__item header__menu__right__item">
                             <Link to="/cart">
                                 <i className="bx bx-shopping-bag"></i>
