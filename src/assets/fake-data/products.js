@@ -42,7 +42,7 @@ const products = [
         image01: product_01_image_01,
         image02: product_01_image_02,
         categorySlug: "playeras",
-        colors: ["negro"],
+        colors: ["negro"], ["amarillo"],
         slug: "ao-thun-dinosaur-01",
         size: ["s", "m", "l", "xl"],
         description: `La camiseta tradicional de toda la vida <br>
